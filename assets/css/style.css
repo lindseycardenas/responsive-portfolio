@@ -215,25 +215,37 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
-  
-@media only screen and (max-width: 640px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-@media only screen and (min-width: 641px) and (max-width: 768px) {
-    body {
-        background-color: darkblue;
-    }
-}
-
-@media only screen and (min-width: 980px) {
-    body {
-        background-color: red;
-    }
-}
 
 img{
   max-width: 100%;
+}
+  
+@media screen and (min-width: 980px) {
+    body {
+        background: lightblue;
+    }
+
+    .wrapper{
+      width: 900px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background: darkblue;
+    }
+
+    .wrapper{
+      width: 700px; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background: red;
+    }
+
+    .wrapper{
+      width: 600px; 
+    }
 }
